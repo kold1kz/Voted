@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a271bcc0.chunk.css",
+    "main.js": "/static/js/main.94c05ace.chunk.js",
+    "main.js.map": "/static/js/main.94c05ace.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.71c5bbf3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.71c5bbf3.js.map",
+    "static/js/2.70ec35ee.chunk.js": "/static/js/2.70ec35ee.chunk.js",
+    "static/js/2.70ec35ee.chunk.js.map": "/static/js/2.70ec35ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a271bcc0.chunk.css.map": "/static/css/main.a271bcc0.chunk.css.map",
+    "static/js/2.70ec35ee.chunk.js.LICENSE.txt": "/static/js/2.70ec35ee.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/honeyscriptcyr_light.dfa5e42c.woff2",
+    "static/media/alert.d3f61112.svg": "/static/media/alert.d3f61112.svg",
+    "static/media/eye-label.d06f4e35.svg": "/static/media/eye-label.d06f4e35.svg",
+    "static/media/header-logo.edb235c9.svg": "/static/media/header-logo.edb235c9.svg",
+    "static/media/login-page-logo.296fa5e3.svg": "/static/media/login-page-logo.296fa5e3.svg",
+    "static/media/user.7eb38d2d.svg": "/static/media/user.7eb38d2d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71c5bbf3.js",
+    "static/js/2.70ec35ee.chunk.js",
+    "static/css/main.a271bcc0.chunk.css",
+    "static/js/main.94c05ace.chunk.js"
+  ]
+}

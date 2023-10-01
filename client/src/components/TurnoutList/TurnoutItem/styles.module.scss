@@ -1,0 +1,69 @@
+.turnout-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__district {
+        display: block;
+        width: 100px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0.67;
+        color: var(--text-color);
+        margin: 0;
+        margin-right: 147px;
+    }
+
+    &__graph {
+        width: 5px;
+        max-width: 680px;
+        min-width: 5px;
+        height: 28px;
+        background: var(--primary-color);
+        margin-right: 20px;
+        transition: width 1s ease-in-out;
+    }
+
+    &__percent {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0.67;
+        color: var(--text-color);
+    }
+
+}
+
+.turnout-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-height:900px) {
+    .turnout-item {
+        margin-bottom: 28px !important;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .turnout-item {
+        &__district {
+            margin-right: 60px;
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .turnout-item {
+        &__district {
+            font-size: 20px;
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        &__percent {
+            font-size: 20px;
+        }
+    }
+
+}

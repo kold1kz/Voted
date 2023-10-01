@@ -1,0 +1,40 @@
+.dev-time{
+    width: 150px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 1000;
+    padding: 10px;
+    background-color: rgba(104, 104, 104, 0.829);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.336);
+
+    &_using{
+        outline: 2px solid rgb(38, 186, 255);
+    }
+    label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        input{
+            width: 50px;
+        }
+        
+    }
+    
+    button{
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+
+    label:not(:last-child), button:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    small{
+        color: white
+    }
+}

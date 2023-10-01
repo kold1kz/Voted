@@ -1,0 +1,47 @@
+.turnout-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    height: 100%;
+    padding:0 40px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    
+
+    &_empty{
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__error{
+        .error-text{
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .error-btn{
+            max-width: 320px;
+            font-size: 18px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-height:900px) {
+    .turnout-list {
+        padding-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .turnout-list{
+        padding: 0 10px;
+        padding-bottom: 10px;
+    }
+
+}

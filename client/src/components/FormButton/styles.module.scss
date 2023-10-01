@@ -1,0 +1,32 @@
+.form-button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: var(--text-color-light);
+
+    &_color {
+        &_red {
+            background-color: var(--secondary-red-color);
+        }
+
+        &_gray {
+            background-color: rgba(136, 137, 138, 0.5);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-button {
+        font-size: 20px;
+        height: 44px;
+    }
+
+}

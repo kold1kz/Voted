@@ -1,0 +1,85 @@
+.popup{
+    &__background{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 100px;
+        width: 100%;
+        max-width: 900px;
+        min-height: 500px;
+        max-height: 90vh;
+        background-color: var(--background-color);
+    }
+
+    &__props{
+        margin-bottom: 50px;
+    }
+
+    &__buttons-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button{
+        max-width: 274px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popup{
+        &__content{
+            padding: 20px 50px;
+        }
+    
+        &__props{
+            margin-bottom: 25px;
+        }
+    
+        &__buttons-block{
+            flex-direction: column;
+        }
+    
+        &__button{
+            max-width: 500px;
+        }
+
+        &__button:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popup{
+        &__content{
+            padding: 20px;
+            max-height: none;
+        }
+    
+        &__props{
+            margin-bottom: 20px;
+        }
+    
+        &__button{
+            max-width: none;
+        }
+
+        &__button:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.photo-list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 47px 50px 0 50px;
+
+    &_empty{
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    &__error{
+        .error-text{
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .error-btn{
+            max-width: 320px;
+            font-size: 18px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .photo-list{
+        padding: 47px 20px 0 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .photo-list{
+        padding: 30px 12px 0 12px;
+        justify-content: space-between;
+    }
+
+}

@@ -1,0 +1,113 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    &__header{
+        position: absolute;
+    }
+
+    &__picture {
+        padding-top: 150px;
+        width: 100%;
+        height: 100vh;
+        flex-shrink: 1;
+        background-color: var(--background-secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__content-container {
+        width: 45%;
+        padding: 20px;
+        flex-shrink: 0;
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+
+            .login-form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: 500px;
+
+                &__description {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 1.17;
+                    margin-bottom: 30px;
+                    color: var(--text-color);
+                }
+
+                &__main-error {
+                    margin-bottom: 20px;
+                    visibility: hidden;
+
+                    &_showing {
+                        visibility: visible;
+            
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .login-page {
+        &__content-container {
+            width: 60%;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .login-page {
+        &__content-container {
+            padding-top: 120px;
+            width: 100%;
+            align-items: center;
+            .content {
+                padding-top: 0;
+                .login-form {
+                    &__description {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                    &__main-error {        
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                     
+                    }
+                }
+            }
+        }
+        &__picture {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .login-page {
+        &__content-container {
+            padding-top: 90px;
+        }
+    }
+}

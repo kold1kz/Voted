@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./styles/fonts/DMSans-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./styles/fonts/DMSans-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HoneyScriptCYR";
+  src: url("./styles/fonts/honeyscriptcyr_light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+:root {
+  --font-family: "DMSans", sans-serif;
+  --font-family-desk: "HoneyScriptCYR", sans-serif;
+  --primary-color: #104AA1;
+  --secondary-red-color: #BD181E;
+  --secondary-gray-color: #979797;
+  --text-color: #000000;
+  --text-secondary-color: #5F5D5D;
+  --text-color-light: #fff;
+  --background-color: #fff;
+  --background-secondary-color: #F5F9FF;
+  --background-alert-color: #FDE8E6;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+.btn-reset {
+  padding: 0;
+  font-family: var(--font-family);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}

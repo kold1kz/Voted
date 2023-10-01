@@ -1,0 +1,64 @@
+.header{
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    height: 150px;
+    &__clock{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 54px;
+        font-size: 40px;
+        color: var(--text-color-light);
+        font-weight: 700;
+        background-color: var(--primary-color);
+
+    }
+    &__logo{
+        height: 100%;
+        display: block;
+    }
+    &__clock_hidden{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        position: relative;
+        padding: 20px 20px;
+        align-items: center;
+        height: auto;
+        max-height: 120px;
+
+        &__clock{
+            width: 30%;
+            height: 44px;
+            font-size: 22px;
+            margin-right: 6%;
+    
+        }
+
+        &__logo{
+            height: auto;
+            max-height: 80px;
+            width: 64%;
+        }
+    }
+}

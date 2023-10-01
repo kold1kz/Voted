@@ -1,0 +1,106 @@
+.form-input {
+    width: 100%;
+
+    &__label {
+        display: block;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 12px;
+    }
+    &__input-wrapper{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 84px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        background: transparent;
+        border: 1px solid var(--secondary-gray-color);
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 1.7;
+
+        &_with-icon {
+            padding-right: 70px;
+        }
+        &_error {
+            border-color: var(--secondary-red-color);
+        }
+    }
+
+    &__input:focus {
+        outline: 1px solid var(--primary-color);
+        border-color: transparent;
+    }
+
+    &__input-icon {
+        display: block;
+        width: 27px;
+        position: absolute;
+        z-index: 2;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-60%);
+        cursor: pointer;
+    }
+
+    &__error {
+        display: block;
+        height: 25px;
+        font-size: 20px;
+        color: var(--secondary-red-color);
+        margin-bottom: 20px;
+        visibility: hidden;
+        &_display{
+            display: none;
+        }
+
+        &_showing {
+            visibility: visible;
+            display: block;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .form-input {
+        &__label {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        &__input-wrapper{
+            height: 44px;
+        }
+
+        &__input {         
+            padding: 0 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+    
+            &_with-icon {
+                padding-right: 40px;
+            }
+        }
+        &__input-icon {
+            width: 20px;
+            right: 15px;
+        }
+        &__error {
+            height: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+    }
+    
+}

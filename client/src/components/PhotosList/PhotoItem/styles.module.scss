@@ -1,0 +1,138 @@
+.photo-item {
+    width: 260px;
+    height: 500px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    &__surname {
+        margin: 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.46;
+        text-transform: uppercase;
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.46;
+        margin-bottom: 20px;
+    }
+
+    &__consigment {
+        margin: 0;
+        margin-top: auto;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 1.63;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .photo-item {
+        padding: 12px;
+        height: 400px;
+        margin-right: 20px;
+
+        &__surname,
+        &__name {
+            font-size: 24px;
+        }
+
+        &__consigment {
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .photo-item {
+        padding: 12px;
+
+        &__surname,
+        &__name {
+            font-size: 20px;
+            line-height: 1.33;
+            margin-bottom: 0;
+        }
+
+        &__consigment {
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .photo-item {
+        height: auto;
+        min-height: 300px;
+        width: 42%;
+        margin: 0;
+        margin-bottom: 30px;
+
+        &__img {
+            width: 100%;
+            min-height: 120px;
+            max-height: 140px;
+        }
+
+        &__surname,
+        &__name {
+            font-size: 20px;
+            line-height: 1.33;
+            margin-bottom: 0;
+        }
+
+        &__name{
+            margin-bottom: 20px;
+        }
+
+        &__consigment {
+            font-size: 18px;
+        }
+    }
+    .photo-item:last-child {
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .photo-item {
+        padding: 8px;
+        width: 46%;
+        margin: 0;
+        margin-bottom: 30px;
+
+
+        &__surname,
+        &__name {
+            font-size: 15px;
+            line-height: 1.33;
+        }
+
+        &__consigment {
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
